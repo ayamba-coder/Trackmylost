@@ -1,8 +1,0 @@
-<nav class="navbar navbar-expand-md bg-success navbar-light">
-    <LinkTo @route='Report' class="navbar-brand"><img src="../../public/assets/images/logobottom.jpg" alt="navbar"/></LinkTo>
-    <ul class="navbar-nav">
-        {{#each this.nav as |item|}}
-            <li class="nav-item"><LinkTo @route={{item}} class="nav-link">{{item}}</LinkTo></li>
-        {{/each}}
-    </ul>
-</nav>

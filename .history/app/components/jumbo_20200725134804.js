@@ -1,8 +1,0 @@
-import Component from '@glimmer/component';
-import { inject as service } from '@ember/service';
-
-export default class JumboComponent extends Component {
-    router =  service()
-    nav = ['Pen','pencil','juice','fattish']
-    
-}

@@ -1,0 +1,40 @@
+<div class=" jum">
+</div>
+<nav class="navbar navbar-expand-md ui green inverted navbar-light">
+    <button type="button" class="navbar-toggler center" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapse_target">
+    <LinkTo @route='I Found' class="navbar-brand"><img src="assets/images/logobottom.jpg" alt="navbar"/></LinkTo>
+    <span class="navbar-text">TrackMyLost</span>
+    <ul class="navbar-nav">
+        {{#each this.nav as |item|}}
+            <li class="nav-item"><LinkTo @route={{item}} class="nav-link">{{item}}</LinkTo></li>
+        {{/each}}
+    </ul>
+    </div>
+</nav>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <button type="button" class="navbar-toggler center" data-toggle="collapse" data-target="#collapse_target">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+            <a class="navbar-brand" href="http://itemtracker.dx.am/index.php" style="color: limegreen"><span><img style="max-width:100%; max-height:100%; " src="./tracker_files/logobottom.jpg"></span> ITEM TRACKER</a>
+        <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="http://itemtracker.dx.am/index.php">Home</a>
+                </li>
+                <li>
+                    <a href="http://itemtracker.dx.am/report.php">Report</a>
+                </li>
+                <li>
+                    <a href="http://itemtracker.dx.am/login.php">Login</a>
+                </li>
+                <li>
+                    <a href="http://itemtracker.dx.am/signup.php">Signup</a>
+                </li>
+            </ul>
+        </div>
+</nav>

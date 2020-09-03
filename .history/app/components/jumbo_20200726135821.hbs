@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-md ui green inverted navbar-light navbar-sticky">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon big"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapse_target">
+    <LinkTo @route='I Found' class="navbar-brand"><img src="assets/images/logobottom.jpg" alt="navbar"/></LinkTo>
+    <span class="navbar-text">TrackMyLost</span>
+    <ul class="navbar-nav">
+        {{#each this.nav as |item|}}
+            <li class="nav-item"><LinkTo @route={{item}} class="nav-link">{{item}}</LinkTo></li>
+        {{/each}}
+    </ul>
+    </div>
+</nav>

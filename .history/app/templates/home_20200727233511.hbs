@@ -1,0 +1,27 @@
+<div class="header-content">
+    <div class="header-content-inner">
+        <h1>TrackMyLost</h1>
+        <p>WE HAVE PUT SMILES ON FACES! REUINTING YOU WITH YOUR LOST DOCUMENTS</p>
+         <LinkTo @route='report' class="ui button red " >I've found something!</LinkTo>
+         <div class="ui divider hidden"></div>
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control " placeholder="search example: Batey Martin" id="query" name="result_query" required="true"/>
+			</div>
+         <button type="submit" href="" class="ui button green" onclick={{action 'tick' }} >Search</button>
+		</form>
+     </div>
+ </div>
+ <div class="ui divider hidden"></div>
+<BsModal @onSubmit={{action "submit"}} as |Modal|>
+  <Modal.header>
+    <h4 class="modal-title"><i class="glyphicon glyphicon-alert"></i> Alert</h4>
+  </Modal.header>
+  <Modal.body>
+    Are you absolutely sure you want to do that???
+  </Modal.body>
+  <Modal.footer as |footer|>
+    <BsButton @onClick={{action Modal.close}} @type="danger">Oh no, forget it!</BsButton>
+    <BsButton @onClick={{action Modal.submit}} @type="success">Yeah!</BsButton>
+  </Modal.footer>
+</BsModal>

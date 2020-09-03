@@ -1,0 +1,16 @@
+ 
+<BsNavbar as |navbar|>
+  <div>
+    <navbar.toggle />
+    <a class="navbar-brand" href="#">Brand</a>
+  </div>
+  <navbar.content class="navbar-red">
+    <navbar.nav as |nav|>
+        {{#each this.nav as |item|}}
+            <nav.item>
+                <nav.linkTo @route={{item}}  @collapseNavbar={{false}}>{{item}}</nav.linkTo>
+            </nav.item>
+        {{/each}}
+    </navbar.nav>
+  </navbar.content>
+</BsNavbar>

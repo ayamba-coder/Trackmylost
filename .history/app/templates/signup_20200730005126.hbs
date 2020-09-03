@@ -1,0 +1,45 @@
+<div class="header-content">
+    <h1 class="header-content-inner">TrackMyLost</h1>
+		<div class="col-sm-6 header-content-inner">
+            <div class="alert alert-danger" role="alert">
+                <strong>only for To-be Agents</strong>
+            </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title text-white">
+						<i class="ui icon signup green"></i> 
+						Application Form
+					</h3>
+
+                </div>
+				<div class="panel">
+				
+				<div class="panel-body">
+					<form action="server.php" method="post">
+						<div class="form-group">
+							<input type="text" class="form-control" id="uid" name="sign_fname" placeholder="First Name" required="true"/>
+						</div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="uid" name="sign_lname" placeholder="Last Names" required="true"/>
+                        </div>
+						<div class="form-group">
+							<input type="tel" class="form-control" id="uid" name="sign_tel" placeholder="Telephone" required="true"/>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="uid" name="sign_reg" placeholder="Town" required="true"/>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" id="pwd" name="sign_pass1" placeholder="Password" required="true"/>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" id="pwd" name="sign_pass2" placeholder="confirm Password" required="true"/>
+						</div>
+						<button type="submit" class="btn btn-success" name="sign_submit">submit</button><a href="login.php">  already have an account?</a>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+        </div>
+        
+{{outlet}}

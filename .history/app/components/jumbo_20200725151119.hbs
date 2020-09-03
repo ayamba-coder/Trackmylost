@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-md bg-success navbar-light">
+    <div class="navbar-header">
+    <LinkTo @route='Report' class="navbar-brand navbar-right"><img src="assets/images/logobottom.jpg" alt="navbar"/></LinkTo>
+    <span class="navbar-text">TrackMyLost</span>
+    </div>
+    <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item"><LinkTo @route='Report' class="nav-link active">Hello</LinkTo></li>
+        {{#each this.nav as |item|}}
+            <li class="nav-item"><LinkTo @route={{item}} class="nav-link">{{item}}</LinkTo></li>
+        {{/each}}
+    </ul>
+</nav>

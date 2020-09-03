@@ -1,0 +1,21 @@
+
+<BsNavbar as |navbar|   >
+  <div>
+    <navbar.toggle />
+    <LinkTo @route='home' class="navbar-brand"><img src="assets/images/logobottom.jpg" alt="navbar"/>TrackMyLost</LinkTo>
+  </div>
+  <navbar.content>
+    <navbar.nav as |nav|>
+        {{#each this.nav as |item|}}
+            <nav.item>
+                <nav.linkTo @route={{item}}  @collapseNavbar={{false}}>{{item}}</nav.linkTo>
+            </nav.item>
+        {{/each}}
+        <div class="justify-content-end">
+            <nav.item>
+                <nav.linkTo @route='report'  @collapseNavbar={{false}}>Lang</nav.linkTo>
+            </nav.item>
+        </div>
+    </navbar.nav>
+  </navbar.content>
+</BsNavbar>

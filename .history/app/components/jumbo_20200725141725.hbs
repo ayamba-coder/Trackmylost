@@ -1,0 +1,8 @@
+<nav class="navbar navbar-expand-md bg-primary">
+    <ul class="navbar-nav">
+        {{#each this.nav as |item|}}
+            <li><LinkTo @route='/'{{item}}>{{item}}</LinkTo></li>
+        {{/each}}
+    </ul>
+</nav>
+{{log this.router}}

@@ -9,6 +9,8 @@
 /node_modules/
 
 # misc
+/package-lock.json
+/.history
 /.env*
 /.pnp*
 /.sass-cache

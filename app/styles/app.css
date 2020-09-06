@@ -65,10 +65,10 @@ a:hover,a.active{
         color: rgb(45, 214, 11);
     }
 }
-@media(max-width: 858px){
+@media(max-width: 1076px){
     label.logo{
     color: rgb(45, 214, 11);
-    font-size: 33px;
+    font-size: 31px;
     line-height: 80px;
     padding: 0px;
     font-weight: bold;
@@ -92,6 +92,7 @@ a:hover,a.active{
         z-index: 1;
     }
     nav ul li{
+        width: 100%;
         display: block;
         line-height: 20px;
     }

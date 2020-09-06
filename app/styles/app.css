@@ -60,12 +60,19 @@ a:hover,a.active{
 @media(max-width: 952px){
     
     label.logo{
-        font-size: 25px;
-        padding-left:10px;
+        font-size: 24px;
+        padding-left:1px;
         color: rgb(45, 214, 11);
     }
 }
 @media(max-width: 858px){
+    label.logo{
+    color: rgb(45, 214, 11);
+    font-size: 33px;
+    line-height: 80px;
+    padding: 0px;
+    font-weight: bold;
+}
     .header-content{
         padding: 10 px;
     }
@@ -132,7 +139,7 @@ a {
      .header-content-inner {
         margin-right: auto;
         margin-left: auto;
-         margin-top: 150px;
+         margin-top: 15px;
     }
 
     .header-content-inner h1 {

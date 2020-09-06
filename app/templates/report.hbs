@@ -1,47 +1,34 @@
-<div class="ui">
-  <div class="text-white">
-    <h1> Register the Item Here!</h1>
-    <ol>
-        <li>Fill out the form.</li>
+<div class="header-content">
+	<div class="w3-container w3-teal w3-center">
+  		<h1>Register the Document Here!</h1>
+	</div>
+    <ol class="text-white w3-center">
+    	<li>Fill out the form.</li>
         <li>Confirm your number</li>
         <li>Wait for owner to call/sms you</li>
-        <li>Recieve your MOMO gift :)</li>
+        <li>Recieve your MOMO gift <i class="ui icon smile yellow"></i></li>
     </ol>
-  </div>
-  <div class="header-content">
-		<div class="">
-			<div class="panel panel-default">
-				<div class="panel">
-				
-				<div class="panel-body">
-					<form>
-						<div class="form-group bg-dark text-white">
-              <label for="surname">Surname</label>
-							<input type="text" class="form-control" id="surname" name="sign_fname" placeholder="Example: Batey" required="true"/>
-						</div>
-            <div class="form-group bg-dark text-white">
-              <label for="givenNames">Given Names</label>
-                <input type="text" class="form-control" id="givenNames" name="sign_lname" placeholder="Example: Martin Ayamba Takuntoh" required="true"/>
-            </div>
-						<div class="form-group bg-dark text-white">
-              <label for="givenNames">Your phone number</label>
-							<input type="tel" class="form-control" id="tel" name="sign_tel" placeholder="Telephone" required="true"/>
-						</div>
-						<div class="form-group bg-dark text-white">
-              <label for="givenNames">Where did you pick it?</label>
-							<input type="text" class="form-control" id="town" name="sign_reg" placeholder="Town" required="true"/>
-						</div>
-            <div class="form-group bg-dark text-white">
-              <label for="givenNames">What is your Name?</label>
-							<input type="text" class="form-control" id="town" name="sign_reg" placeholder="Town" required="true"/>
-						</div>
-						<button type="submit" class="btn btn-success" name="sign_submit">Publish It let the world see it</button>
-					</form>
-				</div>
-			</div>
-			</div>
+    <select class="w3-select" name="option">
+  		<option value="" disabled selected>Choose type of Document</option>
+  		<option value="1">ID Card</option>
+  		<option value="2">Driver license</option>
+  		<option value="3">Credit card</option>
+  		<option value="3">Passport</option>
+	</select>
+	<div class="ui divider hidden"></div>
+	<form class="w3-container ">
+		<div class="w3-card-4 form-group">
+			<label class="w3-label w3-validate w3-text-white">First Name on item</label>
+			<input class="w3-input" type="text" aria-placeholder="e.g batey" placeholder="e.g batey" required>
+			<label class="w3-label w3-text-white">Other Names</label>
+			<input class="w3-input" type="text" required>
+			<label class="w3-label w3-text-white ">Your Telephone</label>
+			<input class="w3-input" type="number" placeholder="how can the owner reach you?" required>
 		</div>
-  </div>
-</div>      
-<div class="ui divider"></div>
+		<div class="w3-center">
+			<button type="submit" class="btn btn-success">ANNOUNCE IT <i class="ui icon announcement purple"></i></button>
+		</div>
+	</form>
+</div>
+
 {{outlet}}

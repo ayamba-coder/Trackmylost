@@ -5,7 +5,7 @@
   "description": "Small description for track-my-lost goes here",
   "repository": "",
   "license": "MIT",
-  "author": "",
+  "author": "Batey Martin",
   "directories": {
     "doc": "doc",
     "test": "tests"

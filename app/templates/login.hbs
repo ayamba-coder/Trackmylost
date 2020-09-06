@@ -1,10 +1,10 @@
-<div class="header-content">
+<div class="header-content w3-center">
 		<div class="col-sm-6 header-content-inner">
-			<div class="alert alert-danger" role="alert">
-				<strong>only for agents</strong>
-			</div>
 
-			<div class="panel panel-default">
+			<div class="panel">
+							<div class="alert alert-danger">
+				<h3>only for agents</h3>
+				</div>
 
 				<div class="panel panel-default">
 				<div class="panel-heading">
@@ -14,12 +14,12 @@
 					</h3>
 				</div>
 				<div class="panel-body">
-					<form action="server.php" method="post">
+					<form>
 						<div class="form-group">
-							<input type="text" class="form-control" id="uid" name="uid" placeholder="Agence Name" required="true"/>
+							<input type="text" class="form-control" id="uid" placeholder="Agence Name" required="true"/>
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password" required="true"/>
+							<input type="password" class="form-control" placeholder="Password" required="true"/>
 						</div>
                         <button type="submit" class="btn btn-success">Submit</button>
 					</form>
@@ -29,10 +29,6 @@
 
 
 			<hr>
-		</div><!--/Center Column-->
-
-
-	  <!-- Right Column -->
-
-	</div>
+		</div>
+</div>
 {{outlet}}

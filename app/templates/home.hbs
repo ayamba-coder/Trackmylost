@@ -1,14 +1,17 @@
-<div class="header-content">
+<div class="header-content w3-center">
     <div class="header-content-inner">
         <h1>TrackMyLost</h1>
         <p>WE HAVE PUT SMILES ON FACES! TRACKMYLOST REUINTES YOU WITH YOUR LOST DOCUMENTS</p>
         <LinkTo @route='report' class="ui button red " >I've found something!</LinkTo>
         <div class="ui divider hidden"></div>
-		<form role="search" action="result.php" method="post">
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="search example: Batey Martin" id="query" name="result_query" required="true"/>
-			</div>
-            <button type="submit" href="" class="ui button green" onclick={{action 'tick'}}>Search</button>
-		</form>
+        <form class="w3-container">
+            <div class="w3-card-4">
+                <div class="form-group">
+                    <input class="w3-input" type="text" aria-placeholder="e.g batey" placeholder="e.g batey" required>
+                </div>
+            </div>
+            <button type="submit" class="ui button green" onclick={{action 'search'}}>Search</button>
+        </form>
     </div>
 </div>
+{{yield}}

@@ -1,7 +1,7 @@
 <div class="header-content">
 		<div class="col-sm-6 header-content-inner">
             <div class="alert alert-danger" role="alert">
-                <strong>Apply to work at home</strong>
+                <h3>Apply to work at home</h3>
             </div>
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -14,35 +14,24 @@
 				<div class="panel">
 				
 				<div class="panel-body">
-					<form action="server.php" method="post">
-						<div class="form-group">
-							<input type="text" class="form-control" name="sign_fname" placeholder="First Name" required="true"/>
-						</div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="sign_lname" placeholder="Last Names" required="true"/>
-                        </div>
-						<div class="form-group">
-							<input type="tel" class="form-control" name="sign_tel" placeholder="Telephone" required="true"/>
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" name="sign_reg" placeholder="Town" required="true"/>
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" name="sign_pass1" placeholder="Password" required="true"/>
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" name="sign_pass2" placeholder="confirm Password" required="true"/>
-						</div>
+					<form class="ui form">
+						{{#each this.fields as |fieldName|}}
+							<div class="form-group">
+								<label class="w3-label w3-validate w3-text-white">{{fieldName}}</label>
+								<input type="text" class="form-control" name="sign_fname" required/>
+							</div>
+						{{/each}}
                         <div class="form-check text-white">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">I accept the terms and conditions and the privacy policy.</label>
+							<input type="checkbox" id="checkbox_toc">
+                            <label class="form-check-label" for="checkbox_toc">I accept the</label> <LinkTo @route='policy'>terms of conditions and the privacy policy.</LinkTo>
                         </div>
-						<button type="submit" class="btn btn-success" name="sign_submit">submit</button><LinkTo @route='report' >  Already have an account!</LinkTo>
+						<div class="divider ui"></div>
+						<button type="submit" class="btn btn-success" name="sign_submit">submit</button><LinkTo @route='report'> Already have an account?</LinkTo>
 					</form>
 				</div>
 			</div>
 			</div>
 		</div>
         </div>
-        
+
 {{outlet}}

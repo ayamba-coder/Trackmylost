@@ -26,6 +26,7 @@ module.exports = function(defaults) {
   app.import('node_modules/jquery/dist/jquery.js');
   app.import('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
   app.import('node_modules/semantic-ui-css/semantic.min.css')
+  app.import('app/styles/w3.css')
 
   return app.toTree();
 };

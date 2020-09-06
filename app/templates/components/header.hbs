@@ -1,14 +1,16 @@
 
 <nav>
-  <input type="checkbox" id="check">
-  <label for="check" class="checkbtn">
-    <i class="navbar-toggler-icon"></i>
-  </label>
-  <label class="logo">TrackMyLost</label>
-  <ul>
-    <li><LinkTo @route='home'>Home</LinkTo></li>
-    <li><LinkTo @route='report'>Report Item</LinkTo></li>
-    <li><LinkTo @route='login'>Login</LinkTo></li>
-    <li><LinkTo @route='signup'>signup</LinkTo></li>
+  <input type="checkbox" id="check" hidden>
+    <label for="check" class="ui checkbtn basic">
+      <div id="toggle">
+        <i class="sidebar icon"></i>
+        Menu
+     </div>
+    </label>
+  <label class="logo"><i class="ui icon search"></i>TrackMyLost</label>
+  <ul class="w3-navbar">
+    {{#each this.nav as |page|}}
+      <li><LinkTo @route={{page}}>{{page}}</LinkTo></li>
+    {{/each}}
   </ul>
 </nav>

@@ -1,16 +1,19 @@
-
-<nav>
-  <input type="checkbox" id="check" hidden>
-    <label for="check" class="ui checkbtn basic">
-      <div id="toggle" >
-        <i class="sidebar icon"></i>
-        Menu
-     </div>
-    </label>
+<nav class="w3-top">
+{{#side-menu-toggle class='checkbtn' }}
+        <i class="sidebar icon"></i>Menu
+{{/side-menu-toggle}}
   <label class="logo"><i class="ui icon search"></i>TrackMyLost</label>
-  <ul class="w3-navbar">
+  {{#side-menu}}
+    <ul class="w3-navbar">
     {{#each this.nav as |page|}}
-      <li><LinkTo @route={{page}}>{{page}}</LinkTo></li>
+      <li>{{#side-menu-link-to page }} {{page}} {{/side-menu-link-to}}</li>
+    {{/each}}
+  </ul>
+  {{/side-menu}} 
+  {{content-backdrop}}
+      <ul class="w3-navbar unor">
+    {{#each this.nav as |page|}}
+      <li>{{#side-menu-link-to page }} {{page}} {{/side-menu-link-to}}</li>
     {{/each}}
   </ul>
 </nav>

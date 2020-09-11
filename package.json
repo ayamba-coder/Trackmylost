@@ -1,9 +1,9 @@
 {
   "name": "track-my-lost",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "Small description for track-my-lost goes here",
-  "repository": "",
+  "description": "Missen Documents like ID cards,driving licenses can be tracked here easily and retrieved",
+  "repository": "https://github.com/ayamba-coder/Trackmylost.git",
   "license": "MIT",
   "author": "Batey Martin",
   "directories": {
@@ -43,6 +43,7 @@
     "ember-data": "~3.19.0",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.0.1",
+    "ember-intl": "^5.4.2",
     "ember-load-initializers": "^2.1.1",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-notify": "^6.0.0",

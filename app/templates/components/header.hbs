@@ -1,19 +1,30 @@
-<nav class="w3-top">
-{{#side-menu-toggle class='checkbtn' }}
-        <i class="sidebar icon"></i>Menu
+<nav>
+{{#side-menu-toggle class='checkbtn'}}
+        <i class="sidebar icon"></i>
 {{/side-menu-toggle}}
   <label class="logo"><i class="ui icon search"></i>TrackMyLost</label>
-  {{#side-menu}}
+  {{#side-menu class='shortNav' side='right' width='79%'}}
+    <header class="navbar navbar-default">
+       ....
+    <div class="navbar-header" style="float: right;">
+      Menu
+    </div>
+  </header>
     <ul class="w3-navbar">
-    {{#each this.nav as |page|}}
-      <li>{{#side-menu-link-to page }} {{page}} {{/side-menu-link-to}}</li>
+    {{#each this.navItems as |page|}}
+      <li>{{#side-menu-link-to page.title }} <i class="ui icon {{page.icon}} inverted green"></i>{{page.title}} {{/side-menu-link-to}}</li>
     {{/each}}
   </ul>
+  <p>heko</p>
   {{/side-menu}} 
   {{content-backdrop}}
-      <ul class="w3-navbar unor">
+    <ul class="w3-navbar longNav">
     {{#each this.nav as |page|}}
-      <li>{{#side-menu-link-to page }} {{page}} {{/side-menu-link-to}}</li>
+      <li>
+      {{#link-to page}}
+        {{page}}
+      {{/link-to}}
+      </li>
     {{/each}}
   </ul>
 </nav>

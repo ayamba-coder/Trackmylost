@@ -13,5 +13,5 @@ Router.map(function() {
   this.route('signup',{path: 'Become-a-collector'});
   this.route('policy',{path:'terms&conditions'});
   this.route('search');
-  this.route('complaint');
+  this.route('alertme');
 });

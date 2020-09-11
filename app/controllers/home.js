@@ -7,7 +7,7 @@ export default class HomeController extends Controller {
     searchParam = 'Batey'
     @action
     search(){
-        this.transitionToRoute('search')
+        this.transitionToRoute('report')
     }
     
 }

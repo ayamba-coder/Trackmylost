@@ -26,17 +26,17 @@ label.logo{
     padding: 0 100px;
     font-weight: bold;
 }
-nav ul{
+nav .longNav{
     float: right;
     margin-right: 20px;
 }
-nav ul li{
+nav .longNav li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
     height: 80px;
 }
-nav ul li a{
+nav .longNav li a{
     color: white;
     font-size: 17px;
     text-transform: uppercase;
@@ -50,9 +50,9 @@ a:hover,a.active{
     transition: .5s;
 }
 .checkbtn{
-    font-size: 20px;
+    font-size: 25px;
     float:right;
-    margin:18px 0px 0px 0px;
+    margin:24px 0px 0px 0px;
     display: none;
 }
 
@@ -65,12 +65,22 @@ a:hover,a.active{
     }
 }
 @media(max-width: 908px){
-    .unor{
+    .longNav{
         display: none;
+    }
+    .shortNav{
+
+        background: #2c3e50;
+    }
+    .shortNav ul{
+        padding-top: 25px;
+    }
+    .shortNav header{
+        color: white;
     }
     label.logo{
     color: rgb(45, 214, 11);
-    font-size: 24   px;
+    font-size: 30px;
     line-height: 80px;
     padding: 0px;
     font-weight: bold;
@@ -80,24 +90,17 @@ a:hover,a.active{
     }
     .checkbtn{
         color: white;
-        cursor: pointer;
         display: block
     }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: #2c3e50;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        width: 100%;
+    nav .shortNav li{
         display: block;
-        line-height: 20px;
+        line-height: 10px;
+        padding: 18px;
+        border-bottom: 0.7px solid gray;
     }
-    nav ul li a{
-        font-size: 20px;
+    nav .shortNav li a{
+        font-size: 23px;
+        text-transform: capitalize;
     }
     a:hover,a.active{
         background: none;
@@ -151,3 +154,4 @@ a {
         font-size: 20px;
     }
 }
+        

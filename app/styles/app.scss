@@ -113,14 +113,9 @@ a {
     transition: all .35s;
 }
 
- .header-content {
-    width: auto;
-}
-
- .header-content .header-content-inner h1 {
+ .header-content h1 {
     margin-top: 0;
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 25px;
     color: rgb(37, 226, 37);
 
 }

@@ -4,10 +4,6 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    'ember-bootstrap': {
-      'bootstrapVersion': 4,
-      'importBootstrapCSS': true
-    },
     sassOptions: {
       extension: 'scss'
     }
@@ -25,6 +21,9 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+  app.import('node_modules/bootstrap/dist/css/bootstrap.min.css');
+  app.import('node_modules/jquery/dist/jquery.js');
+  app.import('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
   app.import('node_modules/semantic-ui-css/semantic.min.css')
   app.import('app/styles/w3.css')
 

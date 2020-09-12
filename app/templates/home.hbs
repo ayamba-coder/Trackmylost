@@ -1,16 +1,16 @@
 <div class="header-content w3-center">
     <div class="header-content-inner">
-        <h1>TrackMyLost</h1>
+        <h1>Search now with TrackMyLost</h1>
         <p>WE HAVE PUT SMILES ON FACES! TRACKMYLOST REUINTES YOU WITH YOUR LOST DOCUMENTS</p>
-        <LinkTo @route='report' class="ui button red " >I've found something!</LinkTo>
+        <LinkTo @route='report' class="ui button red " >Found a lost document!</LinkTo>
         <div class="ui divider hidden"></div>
         <form class="w3-container">
             <div class="w3-card-4">
                 <div class="form-group">
-                    <input class="w3-input" type="text" aria-placeholder="e.g batey" placeholder="e.g batey" required>
+                    <input class="w3-input" type="text" aria-placeholder="e.g sample search keyword" placeholder="e.g janet amaka Urieh" required>
                 </div>
             </div>
-            <button type="submit" class="ui button green" onclick={{action 'search'}}>Search</button>
+            <button type="submit" class="ui button green" onclick={{action 'search'}}>Search </button>
         </form>
     </div>
 </div>

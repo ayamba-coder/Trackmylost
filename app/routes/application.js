@@ -3,7 +3,7 @@ import { inject as service } from '@ember/service';
 
 export default class ApplicationRoute extends Route {
     model() {
-        return this.store.findAll('loser')
+      //  return this.store.findAll('loser')
     }
 
     @service intl;

@@ -2,12 +2,28 @@
 {{#side-menu-toggle class='checkbtn'}}
         <i class="sidebar icon"></i>
 {{/side-menu-toggle}}
-  <label class="logo"><i class="ui icon search"></i>TrackMyLost</label>
-  {{#side-menu class='shortNav' side='right' width='79%'}}
+  <label class="logo"><i class="ui icon search"></i>{{t "logo"}}</label>
+        <select  class="uix" name="option" {{on "change" (fn this.switchLang value='target.value')}}>
+  	  	<option value='en-us' selected>English</option>
+  	  	<option value='fr-fr' >French</option>
+	    </select>
+    <ul class="w3-navbar longNav">
+    {{#each this.navItems as |page|}}
+      <li>
+      {{#link-to page.title}}
+        {{page.title}}
+      {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+    {{#side-menu class='shortNav'}}
     <header class="navbar navbar-default">
-       ....
-    <div class="navbar-header" style="float: right;">
-      Menu
+       Enongene 
+    <div class="navbar-header">
+      <select  class="w3-select" name="option" {{on "change" (fn this.switchLang value='target.value')}}>
+  	  	<option value='en-us' selected>English</option>
+  	  	<option value='fr-fr' >French</option>
+	    </select>
     </div>
   </header>
     <ul class="w3-navbar">
@@ -15,16 +31,6 @@
       <li>{{#side-menu-link-to page.title }} <i class="ui icon {{page.icon}} inverted green"></i>{{page.title}} {{/side-menu-link-to}}</li>
     {{/each}}
   </ul>
-  <p>heko</p>
   {{/side-menu}} 
-  {{content-backdrop}}
-    <ul class="w3-navbar longNav">
-    {{#each this.nav as |page|}}
-      <li>
-      {{#link-to page}}
-        {{page}}
-      {{/link-to}}
-      </li>
-    {{/each}}
-  </ul>
+    {{content-backdrop}}
 </nav>

@@ -12,6 +12,6 @@ Router.map(function() {
   this.route('login');
   this.route('signup',{path: 'Become-a-collector'});
   this.route('policy',{path:'terms&conditions'});
-  this.route('search');
+  this.route('search',{path: 'search'});
   this.route('alertme');
 });

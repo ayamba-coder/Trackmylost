@@ -1,7 +1,18 @@
-# track-my-lost
+# ![logo](/public/favicon.ico) TrackMyLost
+TrackMyLost is a simple UX/UI Open Source web app intended for easy retrieval of lost documents like ID cards,Passports,Driver license etc
+The Interface and user experience has been greatly considered by eliminating too much content on the app,thereby making the user go straight to the point
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Usage
+
+### Loser
+Loser here reffered to as one who's document got missen can try a luck by inputting his/her full name on the searchbar.
+
+### Samarithan
+Here reffered to as the individual in possession of a missen document uses the report page to input the details of that document alongside his/her number for the owner to reach him/her back.Stipends are usually given to these entities via momo :)
+
+## Agent
+Referred as any individual,business entity or company using this app for business purpose.
+The individual creates an account with its full details on the app,logins and start uploading all documents found in its possession.
 
 ## Prerequisites
 

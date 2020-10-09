@@ -1,0 +1,21 @@
+{
+    "logo" : "TrackMyLost",
+    "header-banner": "Utiliser TackMyLost pour vos perds",
+    "welcome-msg": "Nous avons mis des sourires sur les visages! TRACKMYLOST VOUS REUINT AVEC VOS DOCUMENTS PERDUS",
+    "report-link": "J'ai trouvé un document perdu",
+    "search-link": "Bouton de recherche",
+    "home": "Accueil",
+    "search": "Recherche",
+    "signup": "S'inscrire",
+    "login": "S'identifier",
+    "alert": "alerte moi",
+    "report": "Signaler",
+    "report-para": "Un document perdu a été retrouvé par vous?",
+    "report-banner": "Enregistrez le ci-dessous",
+    "report-instructions":{
+        "first": "Fill out the form",
+        "second": "Confirm your number",
+        "third": "Wait for the owner to call you",
+        "fourth": "Finally we will send you a MOMO gift "
+    }
+}

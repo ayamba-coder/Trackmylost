@@ -1,1 +1,28 @@
+<div class="ui divider hidden"></div>
+<div class="header-content">
+    <div class="w3-container w3-center">
+        <h1>Search Request</h1>
+		<p style="color: white;">Tell us the details of your Lost document.We will alert you if someone reports it here!!</p>	
+	</div>
+        	<form class="w3-container">
+		<div class="form-group">
+			<label class="w3-label w3-validate w3-text-white">Names on the document</label>
+			<input class="w3-input" type="text" aria-placeholder="e.g batey" placeholder="e.g Menkam kunye josephine" required>
+			<label class="w3-label w3-text-white"></label>
+			    <select class="w3-select" name="option">
+  		<option value="" disabled selected>Choose Document Type</option>
+  		<option value="1">ID Card</option>
+  		<option value="2">Driver license</option>
+  		<option value="3">Credit card</option>
+  		<option value="3">Passport</option>
+	</select>   
+			<label class="w3-label w3-text-white ">Mobile number</label>
+			<input class="w3-input" type="number" placeholder="how do we call you after seeing it?" required>
+		</div>
+		<div class="w3-center">
+			<button type="submit" class="btn btn-success">submit<i class="ui icon announcement purple"></i></button>
+		</div>
+	</form>
+</div>
+
 {{outlet}}

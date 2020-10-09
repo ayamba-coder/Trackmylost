@@ -21,14 +21,21 @@ nav{
 }
 label.logo{
     color: rgb(45, 214, 11);
-    font-size: 35px;
+    font-size: 30px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 40px;
     font-weight: bold;
+    clear: both;
 }
+
+.uix{
+    display: inline;
+    cursor: pointer;
+}
+
 nav .longNav{
     float: right;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 nav .longNav li{
     display: inline-block;
@@ -42,6 +49,10 @@ nav .longNav li a{
     text-transform: uppercase;
 }
 
+.resultpage{
+    background-color: rgb(245, 239, 239);
+    height: 100vh;
+}
 a{
     color: rgb(255, 238, 0);
 }
@@ -65,25 +76,29 @@ a:hover,a.active{
     }
 }
 @media(max-width: 908px){
+    .uix{
+        display: none;
+    }
     .longNav{
         display: none;
     }
     .shortNav{
 
-        background: #2c3e50;
+        background: #080d4b;
     }
     .shortNav ul{
-        padding-top: 25px;
+        padding-top: 20px;
+        clear: both;
     }
     .shortNav header{
         color: white;
+        margin-top: 15px;
     }
     label.logo{
     color: rgb(45, 214, 11);
     font-size: 30px;
     line-height: 80px;
     padding: 0px;
-    font-weight: bold;
 }
     .header-content{
         padding: 10 px;
@@ -95,11 +110,11 @@ a:hover,a.active{
     nav .shortNav li{
         display: block;
         line-height: 10px;
-        padding: 18px;
+        padding: 15px 0px;
         border-bottom: 0.7px solid gray;
     }
     nav .shortNav li a{
-        font-size: 23px;
+        text-align: left;
         text-transform: capitalize;
     }
     a:hover,a.active{

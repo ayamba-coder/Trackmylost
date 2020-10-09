@@ -1,11 +1,10 @@
 <div class="header-content">
 	<div class="w3-container w3-teal w3-center">
-			<p>A lost Document has been found by you ?,you are a nice person,a good samarithan</p>
-
-  		<h1>Register the  Document below</h1>
+		<p>{{t "report-para"}}</p>
+  		<h1>{{t "report-banner"}}</h1>
 	</div>
     <ol class="text-white w3-center">
-    	<li>Fill out the form.</li>
+    	<li>{{t "report-instructions.first"}}</li>
         <li>Confirm your number</li>
         <li>Wait for owner to call/sms you</li>
         <li>Recieve your MOMO gift <i class="ui icon smile yellow"></i></li>
@@ -18,7 +17,7 @@
   		<option value="3">Passport</option>
 	</select>
 	<div class="ui divider hidden"></div>
-	<form class="w3-container ">
+	<form class="w3-container">
 		<div class="w3-card-4 form-group">
 			<label class="w3-label w3-validate w3-text-white">First Name on item</label>
 			<input class="w3-input" type="text" aria-placeholder="e.g batey" placeholder="e.g batey" required>
@@ -31,6 +30,7 @@
 			<button type="submit" class="btn btn-success">ANNOUNCE IT <i class="ui icon announcement purple"></i></button>
 		</div>
 	</form>
+	<div class="ui divider hidden"></div>
 </div>
 
 {{outlet}}

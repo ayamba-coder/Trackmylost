@@ -1,34 +1,34 @@
 <nav>
 {{#side-menu-toggle class='checkbtn'}}
-        <i class="sidebar icon"></i>
+        Menu<i class="sidebar icon"></i>
 {{/side-menu-toggle}}
-  <label class="logo"><i class="ui icon search"></i>{{t "logo"}}</label>
+  <label class="logo">{{t "logo"}}</label>
         <select  class="uix" name="option" {{on "change" (fn this.switchLang value='target.value')}}>
-  	  	<option value='en-us' selected>English</option>
-  	  	<option value='fr-fr' >French</option>
+  	  	<option value='en-us' selected>{{t "en"}}</option>
+  	  	<option value='fr-fr' >{{t "fr"}}</option>
 	    </select>
     <ul class="w3-navbar longNav">
     {{#each this.navItems as |page|}}
       <li>
       {{#link-to page.title}}
-        {{page.title}}
+        {{t page.title}}
       {{/link-to}}
       </li>
     {{/each}}
   </ul>
     {{#side-menu class='shortNav'}}
     <header class="navbar navbar-default">
-       Enongene 
+      <img class=" mini avatar ui image" src="img.jpg" alt="doc-icmxg">
     <div class="navbar-header">
       <select  class="w3-select" name="option" {{on "change" (fn this.switchLang value='target.value')}}>
-  	  	<option value='en-us' selected>English</option>
-  	  	<option value='fr-fr' >French</option>
+  	  	<option value='en-us' selected>{{t "en"}}</option>
+  	  	<option value='fr-fr' >{{t "fr"}}</option>
 	    </select>
     </div>
   </header>
     <ul class="w3-navbar">
     {{#each this.navItems as |page|}}
-      <li>{{#side-menu-link-to page.title }} <i class="ui icon {{page.icon}} inverted green"></i>{{page.title}} {{/side-menu-link-to}}</li>
+      <li>{{#side-menu-link-to page.title }} <i class="ui icon {{page.icon}} inverted green"></i>{{t page.title}} {{/side-menu-link-to}}</li>
     {{/each}}
   </ul>
   {{/side-menu}} 

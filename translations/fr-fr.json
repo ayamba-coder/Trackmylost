@@ -8,14 +8,26 @@
     "search": "Recherche",
     "signup": "S'inscrire",
     "login": "S'identifier",
-    "alert": "alerte moi",
+    "alertme": "alerte moi",
     "report": "Signaler",
     "report-para": "Un document perdu a été retrouvé par vous?",
     "report-banner": "Enregistrez le ci-dessous",
-    "report-instructions":{
-        "first": "Fill out the form",
-        "second": "Confirm your number",
-        "third": "Wait for the owner to call you",
-        "fourth": "Finally we will send you a MOMO gift "
-    }
+    "first": "Remplir le formulaire",
+    "second": "Confirmez votre numéro",
+    "third": "Attendez que le propriétaire vous appelle",
+    "fourth": "Enfin nous vous enverrons un cadeau MOMO",
+    "select-question":"Choisissez le type de document",
+    "id":"carte d'identité",
+    "license":"Permis de conduire",
+    "cc":"carte de crédit",
+    "passport":"passeport",
+    "first-name":"Prénom sur l'article",
+    "other-names":"Autres noms",
+    "your-tel":"Ton numéro de téléphone",
+    "announcer":"Annoncez-Le",
+    "view-details":"voir les détails",
+    "alert-banner":"Dites-nous les détails de votre document perdu, nous vous alerterons si quelqu'un le signale ici !!",
+    "alertme-names":"Noms sur L'article",
+    "en":"L'anglais",
+    "fr":"Francais"
 }

@@ -1,22 +1,28 @@
-<div class="card">
+   <div class="card">
     <div class="content">
-    <div class="header">
-        <div class="ui button red">
-    <i class="add icon"></i>
-      Access Information
-    </div>
-    </div>
-      <img class="right floated tiny ui image" src="gh.png" alt="doc-image">
+    <div class="header w3-center">
+          {{#if (is-equal true true)}}
+            <img class=" tiny ui image" src="dri.png" alt="doc-img">
+          {{else if (eq details.type "blue")}}
+            <img class=" small ui image" src="pp.jpeg" alt="doc-imxg">
+          {{else if (eq details.type "")}}
+            <img class=" small ui image" src="cc.jpeg" alt="doc-imxfg">
+          {{/if}}
 
-      <div class="meta">
-        Found:13-sept
+    </div>
+      <div class="w3-center">
+        <strong><b>{{@details.surname}}  {{@details.othername}}</b></strong>
       </div>
       <div class="description">
         Document was found in SouthWest,
       </div>
     </div>
-    <div class="extra content" style="color: black;">
-        <strong><b>Belandigo Mariana Engwari</b></strong>
+    <div class="extra content w3-center">
+      
+          <div class="ui button teal">
+    <i class="add icon"></i>
+     {{t 'view-details'}}
+    </div>
   </div>
 </div>
 {{yield}}

@@ -20,6 +20,7 @@ export default class HeaderComponent extends Component {
 
     @action
     switchLang(e){
-        this.intl.setLocale(e.target.value)
+        this.intl.setLocale(e.target.value);
+        console.log(e.target.value);
     }
 }

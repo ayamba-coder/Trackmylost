@@ -1,143 +1,23 @@
 <div class="ui divider hidden"></div>
 <div class="header-content ui fluid">
 		<div class="fluid ui action input w3-container">
-			<input class="w3-input" type="text" aria-placeholder="e.g batey" placeholder="e.g batey" required>
-            <button class="ui right small attached button green" type="submit" ><i class="ui search icon"></i>search</button>		
+      <form>
+
+      </form>
+      <input class="w3-input" type="text" aria-placeholder="search keyword" placeholder="e.g janet amaka Urieh">
+      <button class="ui right small attached button green" type="submit" {{on "click" this.findItem}}><i class="ui search icon"></i>{{t "search-link"}}</button>		
         </div>
         <div class="ui labels mini w3-center">
-          <div class="ui label button mini black">ID CARD</div>
-        <div class="ui  label button mini pink">passport</div>
-        <div class="ui  label button mini teal">Driving License</div>
-        <div class="ui  label button mini violet">Credti cards</div>
+          <div class="ui label button mini black">{{t "id"}}</div>
+        <div class="ui  label button mini pink">{{t "passport"}}</div>
+        <div class="ui  label button mini teal">{{t "license"}}</div>
+        <div class="ui  label button mini violet">{{t "cc"}}</div>
         </div>
 </div>
 <div class="ui divider hidden"></div>
  <section class="ui cards centered">
-   <div class="card">
-    <div class="content">
-    <div class="header">
-        <div class="ui button red">
-    <i class="add icon"></i>
-      Access Information
-    </div>
-    </div>
-      <img class="right floated tiny ui image" src="gh.png" alt="doc-image">
-
-      <div class="meta">
-        Found:13-sept
-      </div>
-      <div class="description">
-        Document was found in SouthWest,
-      </div>
-    </div>
-    <div class="extra content" style="color: black;">
-        <strong><b>Belandigo Mariana Engwari</b></strong>
-  </div>
-</div>
-<div class="card">
-    <div class="content">
-    <div class="header">
-        <div class="ui button red">
-    <i class="add icon"></i>
-      Access Information
-    </div>
-    </div>
-      <img class="right floated tiny ui image" src="dds.png" alt="doc-image">
-
-      <div class="meta">
-        Found:13-sept
-      </div>
-      <div class="description">
-        Document was found in SouthWest,
-      </div>
-    </div>
-    <div class="extra content" style="color: black;">
-        <strong><b>Samson Nkwelle Bebong</b></strong>
-  </div>
-</div>
-<div class="card">
-    <div class="content">
-    <div class="header">
-        <div class="ui button red">
-    <i class="add icon"></i>
-      Access Information
-    </div>
-    </div>
-      <img class="right floated tiny ui image" src="ddf.png" alt="doc-image">
-
-      <div class="meta">
-        Found:13-sept
-      </div>
-      <div class="description">
-        Document was found in SouthWest,
-      </div>
-    </div>
-    <div class="extra content" style="color: black;">
-        <strong><b>Josophine Magret awu</b></strong>
-  </div>
-</div>
-<div class="card">
-    <div class="content">
-    <div class="header">
-        <div class="ui button red">
-    <i class="add icon"></i>
-      Access Information
-    </div>
-    </div>
-      <img class="right floated tiny ui image" src="if.jpeg" alt="doc-image">
-
-      <div class="meta">
-        Found:13-sept
-      </div>
-      <div class="description">
-        Document was found in SouthWest,
-      </div>
-    </div>
-    <div class="extra content" style="color: black;">
-        <strong><b>KUnteh Melvis Batouri</b></strong>
-  </div>
-</div>
-<div class="card">
-    <div class="content">
-    <div class="header">
-        <div class="ui button red">
-    <i class="add icon"></i>
-      Access Information
-    </div>
-    </div>
-      <img class="right floated tiny ui image" src="gh.png" alt="doc-image">
-
-      <div class="meta">
-        Found:13-sept
-      </div>
-      <div class="description">
-        Document was found in SouthWest,
-      </div>
-    </div>
-    <div class="extra content" style="color: black;">
-        <strong><b>Batey MArtin Ayamba</b></strong>
-  </div>
-</div>
-<div class="card">
-    <div class="content">
-    <div class="header">
-        <div class="ui button red">
-    <i class="add icon"></i>
-      Access Information
-    </div>
-    </div>
-      <img class="right floated tiny ui image" src="gh.png" alt="doc-image">
-
-      <div class="meta">
-        Found:13-septBelandigo Mariana Engwari
-      </div>
-      <div class="description">
-        Document was found in SouthWest,
-      </div>
-    </div>
-    <div class="extra content" style="color: black;">
-        <strong><b>Belandigo Mariana Engwari</b></strong>
-  </div>
-</div>
+   {{#each model as |detail|}}
+     <Lost-Card @details={{detail}} />
+   {{/each}}
 </section>
 {{outlet}}

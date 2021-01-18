@@ -8,16 +8,13 @@ import { tracked } from '@glimmer/tracking';
 export default class SearchController extends Controller {
 
 
-  @tracked search_query= "bat"
+  @tracked search_query= undefined
+  @tracked search_result = undefined
 
       @action
-      geta(){
-          console.log(this.model);
-      }
-
-      @action
-      findItem(){
-        console.log(this.search_query);
+     async findItem(value){
+        this.search_result = value
+        this.store.findRecord('loser',1)
       }
 
 }

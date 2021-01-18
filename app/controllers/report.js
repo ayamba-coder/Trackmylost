@@ -14,16 +14,26 @@ export default class ReportController extends Controller {
     @tracked samaritan = undefined
     @tracked type = undefined;
     @tracked loading=false;
+    @tracked isRewarding = 0
     @tracked doc_type = ['id','passport','license','cc']
     @action
     submit(){
+        this.store.query('loser',{
+            filter:{
+                surname:'bate'
+            }
+        })
+        /*
         let newLoser = this.store.createRecord('loser',{
             surname:this.surname,
             samaritan:this.samaritan,
             type:this.type,
-            othername:this.othername
+            othername:this.othername,
+            isRewarding:this.isRewarding
         })
         newLoser.save();
+        */
+
     }
 
     // not proud of myself doing this.No proper way to bind

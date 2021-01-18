@@ -1,5 +1,6 @@
 {
-    "logo" : "TrackMyLost",
+    "logo" : "MyLost",
+    "reward-req":"Would you like a reward?",
     "header-banner": "Search now wih TackMyLost",
     "welcome-msg": "We have put smiles on Faces! TRACKMYLOST reunites you with your lost documents",
     "report-link": "Found a document",
@@ -10,8 +11,7 @@
     "login": "Login",
     "alertme": "Alert Me",
     "report": "Report Item",
-    "report-para": "You have found a lost Document?",
-    "report-banner": "Register it in the Form Below",
+    "report-para": "You found a document?",
     "first": "Fill out the form",
     "second": "Confirm your number",
     "third": "Wait for the owner to call you",
@@ -26,8 +26,10 @@
     "your-tel":"Your Telephone Number",
     "announcer":"Announce It",
     "view-details":"View Details",
-    "alert-banner":"Tell us the details of your Lost document.We will alert you if someone reports it here!!",
-    "alertme-names":"Names on Document",
+    "alert-banner":"Let us know what you lost,we'll get it back and alert you",
+    "alertme-names":"Full Names as on Document",
+    "send-alert":"Send alert",
+    "alert-question":"Lost a document",
     "en":"English",
     "fr":"French"
 }

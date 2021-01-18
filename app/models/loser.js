@@ -5,4 +5,5 @@ export default class ItemModel extends Model {
     @attr othername;
     @attr type;
     @attr samaritan;
+    @attr isRewarding;
 }

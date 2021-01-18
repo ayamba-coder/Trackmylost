@@ -1,27 +1,28 @@
 <div class="ui divider hidden"></div>
 <div class="header-content">
     <div class="w3-container w3-center">
-        <h1>Search Request</h1>
+        <h1>{{t "alert-question"}} ?</h1>
 		<p style="color: white;">{{t "alert-banner"}}</p>	
 	</div>
 	<br/>
-        	<form class="w3-container">
+    <form class="w3-container">
 		<div class="form-group">
 			<label class="w3-label w3-validate w3-text-white">{{t "alertme-names"}}</label>
 			<input class="w3-input" type="text" aria-placeholder="e.g batey" placeholder="e.g Menkam kunye josephine" required>
-			<label class="w3-label w3-text-white"></label>
-			    <select class="w3-select" name="option">
+			<div class="ui divider hidden"></div>
+	<select class="w3-select" name="option">
   		<option value="" disabled selected>{{t "select-question"}}</option>
   		<option value="1">{{t "id"}}</option>
   		<option value="2">{{t "license"}}</option>
   		<option value="3">{{t "cc"}}</option>
   		<option value="3">{{t "passport"}}</option>
 	</select>   
+	<div class="ui divider hidden"></div>
 			<label class="w3-label w3-text-white ">{{t "your-tel"}}</label>
 			<input class="w3-input" type="number" placeholder="how do we call you after seeing it?" required>
 		</div>
 		<div class="w3-center">
-			<button type="submit" class="btn btn-success">submit<i class="ui icon announcement purple"></i></button>
+			<button type="submit" class="btn btn-success">{{t "send-alert"}}<i class="ui icon announcement purple"></i></button>
 		</div>
 	</form>
 </div>

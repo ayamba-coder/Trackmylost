@@ -1,12 +1,12 @@
    <div class="card">
     <div class="content">
     <div class="header w3-center">
-          {{#if (is-equal true true)}}
-            <img class=" tiny ui image" src="dri.png" alt="doc-img">
-          {{else if (eq details.type "blue")}}
-            <img class=" small ui image" src="pp.jpeg" alt="doc-imxg">
-          {{else if (eq details.type "")}}
-            <img class=" small ui image" src="cc.jpeg" alt="doc-imxfg">
+          {{#if (eq @details.type 'yellow')}}
+            <img class="ui tiny image" src="cc1.png" alt="doc-img">
+          {{else if (eq @details.type 'teal')}}
+            <img class="ui tiny image" src="pp.png" alt="doc-imxg">
+          {{else if (eq @details.type 'red')}}
+            <img class=" ui tiny image" src="cc.png" alt="doc-imxfg">
           {{/if}}
 
     </div>
@@ -14,11 +14,10 @@
         <strong><b>{{@details.surname}}  {{@details.othername}}</b></strong>
       </div>
       <div class="description">
-        Document was found in SouthWest,
+       {{@details.doctype.name}}
       </div>
     </div>
     <div class="extra content w3-center">
-      
           <div class="ui button teal">
     <i class="add icon"></i>
      {{t 'view-details'}}

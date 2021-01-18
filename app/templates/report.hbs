@@ -1,7 +1,6 @@
 <div class="header-content">
-	<div class="w3-container w3-teal w3-center">
-		<p>{{t "report-para"}}</p>
-  		<h1>{{t "report-banner"}}</h1>
+	<div class="w3-center">
+  		<h1>{{t "report-para"}}</h1>
 	</div>
     <ol class="text-white w3-center">
     	<li>{{t "first"}}</li>
@@ -9,14 +8,14 @@
         <li>{{t "third"}}</li>
         <li>{{t "fourth"}} <i class="ui icon smile yellow"></i></li>
     </ol>
+	<form class="w3-container">
     <select class="w3-select" name="option" {{on "change" (fn selectType value='target.value')}}>
   		<option value='' disabled selected>{{t "select-question"}}</option>
 		{{#each this.doc_type as |type|}}
 			<option value={{t type}}>{{t type}}</option>
 		{{/each}}
 	</select>
-	<div class="ui divider hidden"></div>
-	<form class="w3-container">
+		<div class="ui divider hidden"></div> 
 		<div class="w3-card-4 form-group">
 			<label class="w3-label w3-validate w3-text-white">{{t "first-name"}}</label>
 			{{input value=this.surname class="w3-input" type="text" aria-placeholder="e.g batey" placeholder="e.g batey" required=true }}
@@ -24,6 +23,18 @@
 			{{input value=this.othername class="w3-input" type="text" required=true }}
 			<label class="w3-label w3-text-white ">{{t "your-tel"}}</label>
 			{{input value=this.samaritan class="w3-input" type="number" placeholder="e.g 67xxxxxx"  required=true }}
+  <div class="ui segment">
+
+  <div class="field">
+    <div class="ui toggle checkbox">
+      <Input
+        @type="checkbox"
+        @checked={{this.isRewarding}}
+        @id="ask_for_reward" />
+      <label for="ask_for_reward">{{t 'reward-req'}}</label>
+    </div>
+  </div>
+  </div>
 		</div>
 		<div class="w3-center">
 			<button type="button" class="btn btn-success" {{on "click" this.submit}}>{{t "announcer"}} <i class="ui icon announcement purple"></i></button>

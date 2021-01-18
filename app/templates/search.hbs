@@ -4,8 +4,11 @@
       <form>
 
       </form>
-      <input class="w3-input" type="text" aria-placeholder="search keyword" placeholder="e.g janet amaka Urieh">
-      <button class="ui right small attached button green" type="submit" {{on "click" this.findItem}}><i class="ui search icon"></i>{{t "search-link"}}</button>		
+       <Input
+        @type="input"
+        @value={{search_query}}
+        />
+      <button class="ui right small attached button green" type="submit" {{action 'findItem' this.search_query}} ><i class="ui search icon"></i>{{t "search-link"}}</button>		
         </div>
         <div class="ui labels mini w3-center">
           <div class="ui label button mini black">{{t "id"}}</div>
@@ -15,6 +18,9 @@
         </div>
 </div>
 <div class="ui divider hidden"></div>
+{{#if this.search_result}}
+    dddd
+{{/if}}
  <section class="ui cards centered">
    {{#each model as |detail|}}
      <Lost-Card @details={{detail}} />

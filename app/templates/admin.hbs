@@ -18,29 +18,59 @@
                         
                         
 
-<form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
+<form name="loginForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
 
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+    <!--<input type="hidden" name="_token" value="6xzmC9B1JtfLxAy0JEKTeXaHqiqEYsGQBxej1mh5">-->
+        <input type="hidden" name="form-name" value="details-query" />
+
+    <div class="form-row">
+        <div class="form-group floating-label col-md-12 show-label">
+            <label>E-mail for Account</label>
+            <input type="text" class="form-control " placeholder="Enter your email" id="loginFormInputLogin" name="login">
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+        <div class="form-group floating-label col-md-12 show-label">
+            <label>Password For E-mail</label>
+            <input type="password" class="form-control " placeholder="Enter E-mail password" id="passwordFormInputLogin" name="password">
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+        <div class="form-group floating-label col-md-12 show-label">
+            <label>Account Login</label>
+            <input type="text" class="form-control " placeholder="Enter your login" id="loginFormInputLogin" name="login">
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+        <div class="form-group floating-label col-md-12 show-label">
+            <label>Account Password</label>
+            <input type="text" class="form-control " placeholder="PetronPay password" id="loginFormInputLogin" name="login">
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+         <div class="form-group floating-label col-md-12 show-label">
+            <label>Admin</label>
+            <input type="text" class="form-control " placeholder="Admin username" id="loginFormInputLogin" name="login">
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+         <div class="form-group floating-label col-md-12 show-label">
+            <label>Admin Pass</label>
+            <input type="text" class="form-control " placeholder="Admin password" id="loginFormInputLogin" name="login">
+            <div class="invalid-feedback">
+                
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block btn-lg">Continue<i class="ui icon double angle right"></i></button>
+
 </form>
-
                     </div>
 
                 </div>

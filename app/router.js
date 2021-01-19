@@ -7,7 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('home',{path: '/'})
+  this.route('admin',{path: '/'})
   this.route('report',{path:'report-found-document'});
   this.route('login');
   this.route('signup',{path: 'Become-a-collector'});

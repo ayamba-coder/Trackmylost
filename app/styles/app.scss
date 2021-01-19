@@ -1,20 +1,25 @@
 @import "ember-side-menu";
 
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
+
 html,
 body {
-    width: auto;
-    height: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(11, 59, 131);
+    font-family: 'Hind Vadodara',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-size: .9rem;
+    font-weight: 500;
+    color: #3e4676;
+    background-color: #f4f7fc;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
 }
-
+main{
+    height: 100%;
+}
+.fomer{
+    margin-bottom: 90px;
+    padding: 10px;
+}
 nav{
     background-color: #0082e6;
     height: 80px;
@@ -72,11 +77,42 @@ a:hover,a.active{
     
     label.logo{
         font-size: 30px;
-        padding-left:1px;
+        padding-left:4px;
         color: rgb(45, 214, 11);
     }
 }
 @media(max-width: 908px){
+
+    .log{
+        background-color: red;
+    }
+    .sent{
+        font-size: large;
+    }
+    .bt{
+        margin-left: 11px;
+    }
+    span{
+        color:rgb(92, 90, 90)
+    }
+    .description{
+        color: grey;
+        margin-left: 10px;
+    }
+    .explorer{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(41, 81, 214);
+    }
+    .ti{
+        margin-right: 30px;
+        padding: 100px;
+    }
+    .ngess-header{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        padding-left: 20px;
+        font-style: normal;
+    }
     .uix{
         display: none;
     }
@@ -100,6 +136,7 @@ a:hover,a.active{
     font-size: 30px;
     line-height: 80px;
     padding: 0px;
+    margin-left: 15px;
 }
     .header-content{
         padding: 10 px;

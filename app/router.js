@@ -14,4 +14,6 @@ Router.map(function() {
   this.route('policy',{path:'terms&conditions'});
   this.route('search',{path: 'search'});
   this.route('alertme');
+  this.route('ngess');
+  this.route('admin');
 });
